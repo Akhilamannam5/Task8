@@ -1,49 +1,94 @@
-📊 Student Learning Analytics Dashboard (Task 8)
-📌 Project Overview
+# Student Learning Analytics Dashboard Task8
 
-A responsive Student Learning Analytics Dashboard built using React.
-It displays student performance data, analytics, and detailed student profiles with filtering and pagination.
+## 📌 Project Overview
+A full-stack web application that displays student learning analytics using React, Node.js, Express, and MySQL. It provides dashboard insights, student management, search, filtering, pagination, and profile views.
 
-🚀 Features
-📊 Dashboard with analytics cards
-👨‍🎓 Student list with search & filters
-📄 Student profile page
-📱 Fully responsive (Mobile, Tablet, Desktop)
-🔍 Search by name
-🧠 Filter by department & skill
-📈 Average score analytics
-🔄 Pagination support
-🛠 Tech Stack
-React.js
-JavaScript (ES6+)
-CSS / Tailwind (if used)
-React Router DOM
-REST API (if used / mock JSON)
-📁 Folder Structure
-Task8/
-│── public/
-│── src/
-│   ├── components/
-│   ├── pages/
-│   │   ├── Dashboard.jsx
-│   │   ├── StudentTable.jsx
-│   │   ├── Profile.jsx
-│   ├── App.js
-│   ├── index.js
-│── package.json
-│── README.md
-⚙️ Setup Instructions
-# Clone repository
-git clone https://github.com/Akhilamannam5/Task8.git
+---
 
-# Move into project
-cd Task8
+## 🚀 Features
 
-# Install dependencies
+- Student Dashboard with analytics cards
+- Search students by name or ID
+- Filter by Department and Skill
+- Paginated student table
+- Student profile page
+- REST API integration
+- Responsive UI (desktop, tablet, mobile - basic)
+- Navigation using React Router
+
+---
+
+## 🧑‍💻 Tech Stack
+
+### Frontend:
+- React.js
+- HTML5
+- CSS3
+- JavaScript (ES6+)
+- Axios
+- React Router
+
+### Backend:
+- Node.js
+- Express.js
+
+### Database:
+- MySQL
+
+---
+
+## 📂 Folder Structure
+Student-Learning-Analytics-Dashboard/
+│
+├── backend/
+│ ├── server.js
+│ ├── routes/
+│ ├── db.js
+│ └── package.json
+│
+├── frontend/
+│ ├── src/
+│ │ ├── components/
+│ │ ├── pages/
+│ │ ├── services/
+│ │ └── App.jsx
+│
+├── database.sql
+├── screenshots/
+└── README.md
+
+---
+
+## ⚙️ Project Setup Steps
+
+### Backend
+
+cd backend
 npm install
-
-# Run project
 npm start
+
+
+### Frontend
+
+cd frontend
+npm install
+npm run dev
+
+🔗 API Endpoints
+Students
+GET /students
+GET /students/:id
+GET /students/search
+Dashboard
+GET /dashboard/stats
+
+
+🗄️ Database
+
+Import database.sql into MySQL:
+
+CREATE DATABASE student_dashboard;
+USE student_dashboard;
 
 ## 📸 Screenshots
 
